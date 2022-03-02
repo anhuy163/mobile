@@ -137,34 +137,33 @@ class _MyHomePageState extends State<MyHomePage> {
         //   },
           child: Column(
             children: [
-              FlatButton(color: Colors.blue,onPressed: (){showDialog(context: context, builder: (BuildContext){
-                return AlertDialog(
-                  title: new Text("Message"),
-                  content: new Text("Hello An Huy"),
-                  actions: <Widget>[
-                    new FlatButton(onPressed: (){
-                      Navigator.of(context).pop();
-                    }, child: new Text("Close"))
-                  ],
-                );
-              });}, child: new Text("Click to open", style:  TextStyle(fontSize: 20),)),
-              Text(msg, style: TextStyle(fontSize: 15, ),),
-              RaisedButton(
-                child: Text("Click to change msg", style: TextStyle(fontSize: 20),),
-                onPressed: (){
-                  setState(() {
-                    if (msg.startsWith('F')) {
-                      msg = 'We have learned FlutterRaised button example.';
-                    } else {
-                      msg = 'Flutter RaisedButton Example';
-                    }
-                  });
-                },
-                color: Colors.red,
-                textColor: Colors.yellow,
-                padding: EdgeInsets.all(8.0),
-                splashColor: Colors.grey,
-              ),
+              FlatButton(color:Colors.pink,onPressed: (){
+                showDialog(context: context, builder: (BuildContext){
+                  return AlertDialog(
+                    title: Text("Message"),
+                    content: Text("Hello An Huy"),
+                    actions: <Widget>[
+                      new RaisedButton(color:Colors.blue ,onPressed: (){
+                        Navigator.pop(context);
+                      }, child: Text("Close"),)
+                    ],
+                  );
+                });
+              }, child: Text("Click to show"),),
+              Text(msg, style: TextStyle(fontSize: 40, ),),
+              RaisedButton(onPressed: (){
+                setState(() {
+                  if(msg.startsWith("F")){
+                    msg = "Xin chao Ho An Huy";
+                  }
+                  else{
+                    msg = "Flutter xin chao";
+                  }
+                });
+              }, child: Text("Click to change msg"),
+              color: Colors.blue,
+              splashColor: Colors.green,)
+
               // Container(
               //   padding: EdgeInsets.fromLTRB(0, 50, 0, 50),
               //   child: Text("Hello"),
