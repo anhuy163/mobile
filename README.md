@@ -19,3 +19,7 @@ Lesson 13: Làm quen với animation cơ bản
 ![image](https://user-images.githubusercontent.com/62578181/157254931-94ef9cc8-784e-4d19-81fd-a546819c93b2.png)
 Lesson 17: Sử dụng package http để thực hành (đang gặp lỗi)
 ![image](https://user-images.githubusercontent.com/62578181/157796572-004ebcf6-b23d-40cf-861e-adc7cc45da54.png)
+Lesson 19:
+![image](https://user-images.githubusercontent.com/62578181/157807989-4923e5e8-78f5-4a2a-8284-a287359b8475.png)
+Lesson 20:
+![image](https://user-images.githubusercontent.com/62578181/157808895-a0ef5c0e-2e03-4934-b205-97c1a0c5f6b1.png)

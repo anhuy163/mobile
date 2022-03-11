@@ -3,7 +3,6 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'Product.dart';
-
 void main() => runApp(MyApp(products: fetchProducts()));
 
 List<Product> parseProducts(String responseBody) {
@@ -11,7 +10,7 @@ List<Product> parseProducts(String responseBody) {
   return parsed.map<Product>((json) => Product.fromMap(json)).toList();
 }
 Future<List<Product>> fetchProducts() async {
-  final response = await http.get(Uri.parse('http://192.168.209.1:8000/product.json'));
+  final response = await http.get(Uri.parse('http://192.168.14.1:8000/product.json'));
   if (response.statusCode == 200) {
     return parseProducts(response.body);
   } else {
